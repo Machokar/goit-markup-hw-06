@@ -69,6 +69,15 @@
             </li>
           </ul>
         </address>
+        <button
+          class="menu-toggle js-open-menu crot"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobile-meni" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -141,6 +150,7 @@
           <ul class="box-three list">
             <li class="box-three-one">
               <img
+                srcset="./images/Rectangle71.jpg 1x, ./images/mon1.jpg 2x"
                 src="./images/Rectangle71.jpg"
                 alt="My first picture"
                 width="360"
@@ -149,6 +159,7 @@
             </li>
             <li class="box-three-one">
               <img
+                srcset="./images/Rectangle72.jpg 1x, ./images/tel1.jpg 2x"
                 src="./images/Rectangle72.jpg"
                 alt="My second picture"
                 width="360"
@@ -157,6 +168,7 @@
             </li>
             <li class="box-three-one">
               <img
+                srcset="./images/Rectangle73.jpg 1x, ./images/soltel1.jpg 2x"
                 src="./images/Rectangle73.jpg"
                 alt="My therd picture"
                 width="360"
@@ -172,6 +184,7 @@
           <ul class="list box-four">
             <li class="list backround">
               <img
+                srcset="./images/img.jpg 1x, ./images/mark.jpg 2x"
                 src="./images/img.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -214,6 +227,7 @@
             </li>
             <li class="list backround">
               <img
+                srcset="./images/img(1).jpg 1x, ./images/tom.jpg 2x"
                 src="./images/img(1).jpg"
                 alt="Tom Ford"
                 width="264"
@@ -256,6 +270,7 @@
             </li>
             <li class="list backround">
               <img
+                srcset="./images/img(2).jpg 1x, ./images/camila.jpg 2x"
                 src="./images/img(2).jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -298,6 +313,7 @@
             </li>
             <li class="list backround">
               <img
+                srcset="./images/img(3).jpg 1x, ./images/daniel.jpg 2x"
                 src="./images/img(3).jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -538,6 +554,74 @@
         </form>
       </div>
     </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu clor">
+        <svg class="button-modal-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-but"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="./index.html">Studio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="">Contacts</a>
+        </li>
+      </ul>
+      <ul class="tel-mob">
+        <li class="tel-mob-con">
+          <a href="tel:+110001111111" class="tel-mob link"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li>
+          <a href="mailto:info@devstudio.com" class="mail-mob link"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="ul-soc mobile-menu-soc">
+        <li class="li-soc">
+          <a href="" class="a-soc">
+            <svg class="svg-soc" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="li-soc">
+          <a href="" class="a-soc">
+            <svg class="svg-soc" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="li-soc">
+          <a href="" class="a-soc">
+            <svg class="svg-soc" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="li-soc">
+          <a href="" class="a-soc">
+            <svg class="svg-soc" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
