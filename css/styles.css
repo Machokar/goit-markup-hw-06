@@ -370,8 +370,12 @@ ul {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  max-width: 264px;
   max-height: 72px;
+}
+@media only screen and (max-width: 1157.98px) {
+  .footer-text {
+    max-width: 264px;
+  }
 }
 .header-name-footer {
   color: var(--primary-background-color);
@@ -769,8 +773,7 @@ ul {
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  min-width: 350px;
-  max-width: 767px;
+  min-width: 320px;
   height: 584px;
   border-radius: 4px;
   background: #fcfcfc;
@@ -1039,6 +1042,7 @@ ul {
 .footer-area {
   display: block;
   align-items: center;
+  width: 100%;
 }
 .footer-area-name {
   color: var(--primary-color-white);
@@ -1071,7 +1075,11 @@ ul {
   border-radius: 4px;
   text-align: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin: 0 auto;
+}
+@media only screen and (max-width: 767.98px) {
+  .button-footer {
+    margin: 0 auto;
+  }
 }
 .button-footer:focus,
 .button-footer:hover {
@@ -1303,6 +1311,6 @@ input:checked + label > span {
 }
 @media only screen and (max-width: 767.98px) {
   .pora {
-    width: 400px;
+    min-width: 100%;
   }
 }
