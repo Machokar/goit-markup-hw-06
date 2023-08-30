@@ -371,6 +371,7 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   max-height: 72px;
+  text-align: start;
 }
 @media only screen and (max-width: 1157.98px) {
   .footer-text {
@@ -570,6 +571,11 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+@media only screen and (min-width: 768px) and (max-width: 1157.98px) {
+  .dop {
+    text-align: start;
+  }
 }
 .cumnt {
   display: flex;
@@ -858,6 +864,7 @@ ul {
 .topon {
   display: flex;
 }
+
 @media only screen and (max-width: 1157.98px) {
   .topon {
     flex-direction: column;
@@ -866,6 +873,16 @@ ul {
     align-items: center;
     justify-content: center;
     max-width: 582px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1157.98px) {
+  .topon {
+    max-width: 584px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    justify-content: unset;
+    align-items: flex-start;
   }
 }
 @media only screen and (min-width: 1158px) {
@@ -885,6 +902,11 @@ ul {
   letter-spacing: 0.02em;
   color: var(--primary-color-white);
   margin-bottom: 16px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1157.98px) {
+  .social {
+    text-align: start;
+  }
 }
 .ul-soc {
   display: flex;
@@ -1027,8 +1049,10 @@ ul {
 .message-form:focus {
   border-color: var(--primary-color);
 }
-.second-div {
-  margin: 72px 0;
+@media only screen and (max-width: 767.98px) {
+  .second-div {
+    margin: 72px 0;
+  }
 }
 @media only screen and (min-width: 1158px) {
   .second-div {
